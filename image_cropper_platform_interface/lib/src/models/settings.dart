@@ -160,6 +160,8 @@ class AndroidUiSettings extends PlatformUiSettings {
   /// when starting the cropper
   final CropAspectRatioPreset? initAspectRatio;
 
+  final Color? cropGridCornerColor;
+
   AndroidUiSettings({
     this.toolbarTitle,
     this.toolbarColor,
@@ -178,6 +180,7 @@ class AndroidUiSettings extends PlatformUiSettings {
     this.lockAspectRatio,
     this.hideBottomControls,
     this.initAspectRatio,
+    this.cropGridCornerColor,
   });
 
   @override
@@ -199,8 +202,8 @@ class AndroidUiSettings extends PlatformUiSettings {
         'android.show_crop_grid': this.showCropGrid,
         'android.lock_aspect_ratio': this.lockAspectRatio,
         'android.hide_bottom_controls': this.hideBottomControls,
-        'android.init_aspect_ratio':
-            aspectRatioPresetName(this.initAspectRatio),
+        'android.init_aspect_ratio': aspectRatioPresetName(this.initAspectRatio),
+        'android.crop_grid_corner_color': int32(this.cropGridCornerColor?.value),
       };
 }
 
