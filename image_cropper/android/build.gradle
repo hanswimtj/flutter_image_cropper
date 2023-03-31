@@ -34,6 +34,6 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.hanswimtj:ucrop:v2.2.8.2'
+        implementation 'com.github.hanswimtj:ucrop:v2.2.8.3'
     }
 }
