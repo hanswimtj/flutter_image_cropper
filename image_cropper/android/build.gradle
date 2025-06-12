@@ -25,7 +25,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 34
-    namespace "com.madv.image_cropper"
+    namespace "vn.hunghd.flutter.plugins.imagecropper"
     
     defaultConfig {
         minSdkVersion 24
