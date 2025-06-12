@@ -242,8 +242,7 @@ public class ImageCropperDelegate implements PluginRegistry.ActivityResultListen
         if ("square".equals(name)) {
             return new AspectRatio(null, 1.0f, 1.0f);
         } else if ("original".equals(name)) {
-            return new AspectRatio(activity.getString(R.string.ucrop_label_original).toUpperCase(),
-                    CropImageView.SOURCE_IMAGE_ASPECT_RATIO, 1.0f);
+            return new AspectRatio("Original", CropImageView.SOURCE_IMAGE_ASPECT_RATIO, 1.0f);
         } else if ("3x2".equals(name)) {
             return new AspectRatio(null, 3.0f, 2.0f);
         } else if ("4x3".equals(name)) {
@@ -257,8 +256,7 @@ public class ImageCropperDelegate implements PluginRegistry.ActivityResultListen
         } else if ("16x9".equals(name)) {
             return new AspectRatio(null, 16.0f, 9.0f);
         } else {
-            return new AspectRatio(activity.getString(R.string.ucrop_label_original).toUpperCase(),
-                    CropImageView.SOURCE_IMAGE_ASPECT_RATIO, 1.0f);
+            return new AspectRatio("Original", CropImageView.SOURCE_IMAGE_ASPECT_RATIO, 1.0f);
         }
     }
 }
